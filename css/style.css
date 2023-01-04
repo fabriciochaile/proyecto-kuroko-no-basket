@@ -1,0 +1,122 @@
+.reseteolistas a:link,
+a:visited,
+a:active {
+    list-style-type: none;
+    text-decoration: none;
+}
+ul a{
+    padding: 40px;
+    font-size: 25px;
+    color: black;
+}
+
+.logo{
+    width: 200px;
+    height: 133px;
+    padding:30px;
+}
+
+a{
+    text-decoration: none;
+    color: rgb(137, 231, 243);
+}
+
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+body{
+    overflow-x: hidden;
+    background-color: rgba(48, 98, 173, 0.329);
+}
+h1 {
+    background-color: black;
+    border-radius: 30px;
+    color: aliceblue;
+    width: 98%;
+    height: 100px;
+    text-align: center;
+    border: double 12px;
+    border-color: rgba(128, 128, 128, 0.212);
+    padding-top: 60px;
+    margin:0;
+    
+    
+}
+
+.grilla {
+    display: grid;
+    grid-template-columns:1fr 1fr 1fr ;
+    grid-template-rows: 0,5fr 1fr 1fr ;
+    grid-template-areas:
+    "header header header"
+    "main main main"
+    "footer footer footer"
+     ;
+     grid-row-gap: 5px;
+     grid-column-gap: 10px;
+}
+
+header {
+    height: 180px;
+    grid-area: header;
+}
+
+
+
+
+main {
+    display: grid;
+    grid-template-columns: 2,5fr 0,5fr;
+    grid-template-rows:0,5fr 1fr 1fr;
+    grid-template-areas:
+    "titulo titulo titulo"
+   "seccion seccion aside"
+    "seccion seccion aside" ;
+    grid-area:main;
+    grid-row-gap: 13px;
+    grid-column-gap: 13px;
+}
+
+.seccion1A{
+    border:double 12px;
+    background-color: black;
+    color: aliceblue;
+    border-color: rgba(128, 128, 128, 0.212);
+    grid-area: seccion;
+    border-radius: 30px;
+    padding:5px
+}
+
+.parraVideo{
+    display: flex;
+}
+
+
+.titulo{
+    grid-area:titulo
+}
+
+aside {
+    background-color: black;
+    border:double 12px;
+    border-color: rgba(128, 128, 128, 0.212);
+    color: aliceblue;
+    text-align: center;
+    grid-area: aside;
+    border-radius: 30px;
+}
+
+aside h3 {
+    text-decoration-line: underline;
+}
+
+
+footer {
+    grid-area: footer
+}
+
