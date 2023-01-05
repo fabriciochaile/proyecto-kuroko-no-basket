@@ -19,6 +19,7 @@ a{
 }
 ul a:hover{
     background-color: aliceblue;
+    font-size: 30px;
 
 }
 
@@ -130,3 +131,74 @@ footer ul{
 }
 
 
+/*contacto*/
+
+#bodycontacto {
+    display: grid;
+    grid-template-columns: 2,5fr 0,5fr;
+    grid-template-rows:0,5fr 1fr 1fr;
+    grid-area: 
+    "header header"
+    "main main"
+    "footer footer";
+    grid-column-gap: 5px;
+    grid-row-gap: 13px;
+}
+#maincontacto{
+    grid-area: main;
+}
+#headercontacto{
+    grid-area: header;
+}
+#footercontacto{
+    grid-area: footer;
+}
+
+#maincontacto {
+    display: grid;
+    grid-template-columns: 1fr 1fr 0,5fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+    "titulo titulo titulo"
+    "parrafo parrafo parrafo"
+    "formulario formulario aside"
+    "formulario formulario aside" ;
+    grid-column-gap :13px;
+    grid-row-gap: 13px;
+}
+
+.titulocontacto{
+    grid-area: titulo;
+}
+.parrafocontacto{
+    grid-area: parrafo;
+}
+.formulariocontacto{
+    grid-area: formulario;
+}
+.asidecontacto{
+    grid-area: asidecontacto;
+}
+
+
+/*personajes*/
+
+#personaje{
+    height: 230px;
+    width: 240px;
+    border:double;
+    border-radius: 20px;
+    margin: 15px;
+}
+#personaje:hover{
+    height: 235px;
+    width: 245px;
+}
+
+#articulopersonaje{
+    display: flex;
+    height: 450px;
+    width: 850px;
+    padding:10px
+
+}
