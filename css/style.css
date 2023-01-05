@@ -1,24 +1,25 @@
-.reseteolistas a:link,
-a:visited,
-a:active {
-    list-style-type: none;
-    text-decoration: none;
-}
+
 ul a{
     padding: 40px;
     font-size: 25px;
     color: black;
+    border-radius: 20px;
+    transition-duration: 1s;
 }
 
 .logo{
-    width: 200px;
-    height: 133px;
+    height: 130px;
     padding:30px;
+    border-radius: 1000px;
 }
 
 a{
     text-decoration: none;
     color: rgb(137, 231, 243);
+}
+ul a:hover{
+    background-color: aliceblue;
+
 }
 
 nav{
@@ -117,6 +118,15 @@ aside h3 {
 
 
 footer {
+    border: double;
+    border-color: black;
+    margin: 20px;
+    border-radius: 15px;
     grid-area: footer
 }
+footer ul{
+    display: flex;
+    justify-content: space-around;
+}
+
 
