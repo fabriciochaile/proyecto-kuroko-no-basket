@@ -6,7 +6,10 @@ ul a{
     border-radius: 20px;
     transition-duration: 1s;
 }
-
+#iframeindex{
+    border: double;
+    border-radius: 15px;
+}
 .logo{
     height: 130px;
     padding:30px;
@@ -39,15 +42,19 @@ h1 {
     background-color: black;
     border-radius: 30px;
     color: aliceblue;
-    width: 98%;
+    width: 100%;
     height: 100px;
     text-align: center;
     border: double 12px;
     border-color: rgba(128, 128, 128, 0.212);
     padding-top: 60px;
     margin:0;
-    
-    
+    transition-duration: 1s;
+}
+h1:hover {
+    height: 150px;
+    font-size: 40px;
+    text-align: center;
 }
 
 .grilla {
@@ -135,53 +142,48 @@ footer ul{
 
 #bodycontacto {
     display: grid;
-    grid-template-columns: 2,5fr 0,5fr;
+    grid-template-columns: 1fr 1fr 0,5fr;
     grid-template-rows:0,5fr 1fr 1fr;
-    grid-area: 
-    "header header"
-    "main main"
-    "footer footer";
-    grid-column-gap: 5px;
-    grid-row-gap: 13px;
+    grid-template-areas: 
+    "headerc headerc headerc"
+    "mainc mainc mainc"
+    "footerc footerc footerc";
 }
 #maincontacto{
-    grid-area: main;
+    grid-area: mainc;
 }
 #headercontacto{
-    grid-area: header;
+    grid-area: headerc;
 }
 #footercontacto{
-    grid-area: footer;
+    grid-area: footerc;
 }
 
 #maincontacto {
     display: grid;
-    grid-template-columns: 1fr 1fr 0,5fr;
+    grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr;
     grid-template-areas:
-    "titulo titulo titulo"
-    "parrafo parrafo parrafo"
-    "formulario formulario aside"
-    "formulario formulario aside" ;
-    grid-column-gap :13px;
-    grid-row-gap: 13px;
+    "tituloc tituloc tituloc"
+    "sectionc sectionc asidec"
+    "sectionc sectionc asidec"
+    "sectionc sectionc asidec";
 }
 
 .titulocontacto{
-    grid-area: titulo;
+    grid-area: tituloc;
 }
-.parrafocontacto{
-    grid-area: parrafo;
-}
-.formulariocontacto{
-    grid-area: formulario;
+
+#sectionc{
+    grid-area: sectionc;
 }
 .asidecontacto{
-    grid-area: asidecontacto;
+    grid-area: asidec;
 }
 
 
 /*personajes*/
+
 
 #personaje{
     height: 230px;
@@ -189,6 +191,7 @@ footer ul{
     border:double;
     border-radius: 20px;
     margin: 15px;
+    transition-duration: 1s;
 }
 #personaje:hover{
     height: 235px;
@@ -199,6 +202,62 @@ footer ul{
     display: flex;
     height: 450px;
     width: 850px;
-    padding:10px
-
+    padding:10px;
+    justify-content: center;
+    align-items: center; 
+    border: double;
+    border-radius: 20px;
+    transition-duration: 1s;
 }
+#articulopersonaje:hover{
+    color: aliceblue;
+    height:500px;
+    width:900px;
+    background-color: black;
+}
+
+#bodypersonajes{
+    display: grid;
+    grid-template-columns:1fr 1fr 0,5fr;
+    grid-template-rows: 1fr 1fr 1fr 0,5fr;
+    grid-template-areas:
+    "headerp headerp headerp"
+    "mainp mainp mainp"
+    "mainp mainp mainp"
+    "footerp footerp footerp" ;
+}
+
+#headerpersonajes{
+    grid-area: headerp;
+}
+#mainpersonajes{
+    grid-area: mainp;
+}
+#footerpersonajes{
+    grid-area: footerp;
+}
+
+#mainpersonajes{
+    display: grid;
+    grid-template-columns: 1fr 1fr 0,5fr;
+    grid-template-rows: 0,5 fr 1 fr 1 fr 1fr;
+    grid-template-areas: 
+    "titulop titulop titulop"
+    "sectionp sectionp asidep"
+    "sectionp sectionp asidep"
+    "sectionp sectionp asidep";
+}
+#asidepersonajes{
+    grid-area: asidep;
+}
+
+#sectionpersonajes{
+    grid-area: sectionp;
+}
+#titulopersonajes{
+    grid-area: titulop;
+}
+#parrafopersonajes{
+    grid-area: parrafop;
+}
+ 
