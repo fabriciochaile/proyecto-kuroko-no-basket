@@ -334,5 +334,86 @@ footer ul{
     grid-area: asidehistoria;
 }
 
+/*pelicula*/
 
+#bodypelicula {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 0,5fr;
+    grid-template-areas: 
+    "headerpelicula headerpelicula headerpelicula"
+    "mainpelicula mainpelicula mainpelicula"
+    "footerpelicula footerpelicula footerpelicula";
+}
 
+#headerpelicula{
+    grid-area: headerpelicula;
+}
+
+#mainpelicula{
+    grid-area: mainpelicula;
+}
+#footerpelicula{
+    grid-area: footerpelicula;
+}
+
+#mainpelicula{
+    display:grid;
+    grid-template-columns: 1fr 1fr 0,5fr;
+    grid-template-rows: 0,5fr 1fr 1fr 1fr;
+    grid-template-areas:
+    "titulopelicula titulopelicula titulopelicula"
+    "sectionuno sectionuno asidepelicula"
+    "sectiondos sectiondos asidepelicula"
+    "sectiontres sectiontres asidepelicula" ;
+}
+#titulopelicula{
+    grid-area: titulopelicula;
+}
+#sectionuno{
+    font-size: 23px;
+    grid-area: sectionuno;
+}
+#sectiondos{
+    display: flex;
+    font-size: 20px;
+    grid-area: sectiondos;
+    border: double;
+    border-radius: 20px;
+}
+#sectiontres{
+    border-radius: 20px;
+    border: double;
+    grid-area: sectiontres;
+}
+#asidepelicula{
+    grid-area: asidepelicula;
+}
+#silver{
+    height: 230px;
+    width: 240px;
+    border:double;
+    border-radius: 20px;
+    margin: 15px;
+    transition-duration: 1s;
+}
+#nash{
+    height: 240px;
+    width: 270px;
+    border:double;
+    border-radius: 20px;
+    margin: 15px;
+    transition-duration: 1s;
+}
+#antagonistas{
+    text-align: center;
+}
+.malos {
+    display: flex;
+    font-size: 20px;
+}
+
+#videopelicula{
+    display: flex;
+    text-align: start;
+}
