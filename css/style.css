@@ -1,5 +1,7 @@
 
-
+header{
+    width: 100%;
+}
 nav{
     border:double 13px;
     color: aliceblue;
@@ -9,6 +11,7 @@ nav{
     border-color: rgba(128, 128, 128, 0.212);
 }
 ul a{
+    width: 100%;
     padding: 40px;
     font-size: 25px;
     color: rgb(243, 241, 241);
@@ -417,3 +420,9 @@ footer ul{
     display: flex;
     text-align: start;
 }
+
+
+/* vista celular*/
+
+
+
