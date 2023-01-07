@@ -178,8 +178,9 @@ footer ul{
 }
 
 #maincontacto {
+    width:100%;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 0,5fr;
     grid-template-rows: 1fr 1fr 1fr 1fr;
     grid-template-areas:
     "tituloc tituloc tituloc"
@@ -188,11 +189,14 @@ footer ul{
     "sectionc sectionc asidec";
 }
 
+
 .titulocontacto{
     grid-area: tituloc;
 }
 
 #sectionc{
+    border:double;
+    border-radius: 30px;
     grid-area: sectionc;
 }
 .asidecontacto{
